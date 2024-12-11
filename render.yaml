@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: contact-manager-backend
+    env: node
+    buildCommand: "npm install"
+    startCommand: "node backend/server.js"
+
+  - type: web
+    name: contact-manager-frontend
+    env: static
+    staticPublishPath: frontend/contact-manager-app/build
